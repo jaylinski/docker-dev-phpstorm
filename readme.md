@@ -32,16 +32,16 @@ After the containers are built, run `docker-compose up -d` and start coding!
 
 ## Containers
 
-| Container   | Port  | Version  |
-| ----------- | ----- | -------- |
-| nginx       | 8080  | 1.9.*    |
-| node.js*    | 8090  | 4.2.*    |
-| php-fpm     | 9054  | 5.4.*    |
-| php-fpm     | 9055  | 5.5.*    |
-| php-fpm     | 9056  | 5.6.*    |
-| php-fpm     | 9070  | 7.0.*    |
-| mysql       | 9016  | 5.6.*    |
-| mysql       | 9017  | 5.7.*    |
+| Container   | Name    | Port  | Version  |
+| ----------- | ------- | ----- | -------- |
+| nginx       | nginx   | 8080  | 1.9.*    |
+| node*       | nodejs  | 8090  | 4.2.*    |
+| mysql       | mysql56 | 9016  | 5.6.*    |
+|             | mysql57 | 9017  | 5.7.*    |
+| php (fpm)   | php54   | 9054  | 5.4.*    |
+|             | php55   | 9055  | 5.5.*    |
+|             | php56   | 9056  | 5.6.*    |
+|             | php70   | 9070  | 7.0.*    |
 
 \* coming soon
 
