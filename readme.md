@@ -21,7 +21,7 @@ The data default path is set to `~/PhpstormProjects/.docker/data`.
 #### nginx
 
 Create the file `nginx-projects.conf` (or any other `*.conf` file) in your `nginx` folder and insert your server
-configruations.   
+configurations.   
 The file(s) will be copied into the nginx `conf.d` directory.
 
 ### Setup
