@@ -1,0 +1,76 @@
+nginx:
+  build: ./nginx
+  container_name: nginx
+  ports:
+   - "8080:80"
+  volumes:
+   - ~/PhpstormProjects:/usr/share/nginx/html
+  links:
+   - php54
+   - php55
+   - php56
+   - php70
+
+php54:
+  build: ./php54
+  container_name: php54
+  ports:
+   - "9054:9000"
+  volumes:
+   - ~/PhpstormProjects:/var/www/html
+  links:
+   - mysql56
+   - mysql57
+
+php55:
+  build: ./php55
+  container_name: php55
+  ports:
+   - "9055:9000"
+  volumes:
+   - ~/PhpstormProjects:/var/www/html
+  links:
+   - mysql56
+   - mysql57
+
+php56:
+  build: ./php56
+  container_name: php56
+  ports:
+   - "9056:9000"
+  volumes:
+   - ~/PhpstormProjects:/var/www/html
+  links:
+   - mysql56
+   - mysql57
+
+php70:
+  build: ./php70
+  container_name: php70
+  ports:
+   - "9070:9000"
+  volumes:
+   - ~/PhpstormProjects:/var/www/html
+  links:
+   - mysql56
+   - mysql57
+
+mysql56:
+  build: ./mysql56
+  container_name: mysql56
+  environment:
+   - MYSQL_ROOT_PASSWORD=mysql56secret
+  ports:
+   - "9016:3306"
+  volumes:
+   - ~/PhpstormProjects/.docker/data/mysql56:/var/lib/mysql
+
+mysql57:
+  build: ./mysql57
+  container_name: mysql57
+  environment:
+   - MYSQL_ROOT_PASSWORD=mysql57secret
+  ports:
+   - "9017:3306"
+  volumes:
+   - ~/PhpstormProjects/.docker/data/mysql57:/var/lib/mysql
