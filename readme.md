@@ -60,25 +60,26 @@ in mind that this is a security risk!
 
 Please let me know if there is an easy solution for this. Current solutions are too hacky.
 
-## [FAQ](https://github.com/jaylinski/docker-dev-phpstorm/wiki/FAQ)
+## Help
 
+### [FAQ](https://github.com/jaylinski/docker-dev-phpstorm/wiki/FAQ)
 * How to setup Piwik with PHP 5.6 and MySQL 5.6
 
-## Useful commands
+### Useful commands
 
-### Start
+#### Start
 `$ docker-compose up -d`
 
-### Shut down
+#### Shut down
 `$ docker-compose kill`
 
-### List containers
+#### List containers
 `$ docker-compose ps`
 
-### Open container bash
+#### Open container bash
 `$ docker-compose run nginx /bin/bash`
 
-### Remove all docker containers and images
+#### Remove all docker containers and images
 > Do only execute if you know what you are doing!
 
 `$ docker rm $(docker ps -a -q)`   
