@@ -20,7 +20,7 @@ The data default path is set to `~/PhpstormProjects/.docker/data`.
 
 #### nginx
 
-Create the file `nginx-projects.conf` (or any other `\*.conf` file) in your `ngninx` folder and insert your server
+Create the file `nginx-projects.conf` (or any other `*.conf` file) in your `nginx` folder and insert your server
 configruations.   
 The file(s) will be copied into the nginx `conf.d` directory.
 
@@ -56,9 +56,13 @@ by this user can not be accessed by your host user. You will have to `chown` fil
 
 It's the same the other way around, containers will not be able to write data in your project directory, unless you
 grant them access. This can be done by granting read and write access on your projects folder to everyone. Please keep
-in mind, that this is a security risk!
+in mind that this is a security risk!
 
 Please let me know if there is an easy solution for this. Current solutions are too hacky.
+
+## [FAQ](https://github.com/jaylinski/docker-dev-phpstorm/wiki/FAQ)
+
+* How to setup Piwik with PHP 5.6 and MySQL 5.6
 
 ## Useful commands
 
@@ -79,7 +83,3 @@ Please let me know if there is an easy solution for this. Current solutions are 
 
 `$ docker rm $(docker ps -a -q)`   
 `$ docker rmi $(docker images -q)`
-
-## [FAQ](https://github.com/jaylinski/docker-dev-phpstorm/wiki/FAQ)
-
-* How to setup Piwik with PHP 5.6 and MySQL 5.6
