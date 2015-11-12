@@ -11,24 +11,28 @@ Development environment for PhpStorm based on Docker, managed with [Compose](htt
 
 See [Install Docker Compose](https://docs.docker.com/compose/install/) for more information.
 
-### Configuration
+### Setup
+
+Clone this repository into `~/PhpstormProjects/.docker`.
+
+#### Configuration
 
 You may need to configure your project and volume paths in `docker-compose.yml`.
 
 The project default path is set to `~/PhpstormProjects`.
 The data default path is set to `~/PhpstormProjects/.docker/data`.
 
-#### nginx
+##### nginx
 
 Create the file `nginx-projects.conf` (or any other `*.conf` file) in your `nginx` folder and insert your server
 configurations.   
 The file(s) will be copied into the nginx `conf.d` directory.
 
-### Setup
+#### Build
 
-Clone this repository into `~/PhpstormProjects/.docker` and run `docker-compose build`.
+Run `docker-compose build` to fetch and build all containers.
 
-After the containers are built, run `docker-compose up -d` and start coding!
+After your containers are built, run `docker-compose up -d` and start coding!
 
 ## Containers
 
