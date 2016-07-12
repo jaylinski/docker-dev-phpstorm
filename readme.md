@@ -28,6 +28,11 @@ Create the file `nginx-projects.conf` (or any other `*.conf` file) in your `ngin
 configurations.   
 The file(s) will be copied into the nginx `conf.d` directory.
 
+##### node
+
+In order for nginx to run, a default `server.js` in the `node6` directory is executed on startup.   
+You can change the node entry point in the `node6/Dockerfile`.
+
 #### Build
 
 Run `docker-compose build` to fetch and build all containers.
@@ -39,14 +44,12 @@ After your containers are built, run `docker-compose up -d` and start coding!
 | Container   | Name    | Port  | Version  |
 | ----------- | ------- | ----- | -------- |
 | nginx       | nginx   | 8080  | 1.9.*    |
-| node*       | nodejs  | 8090  | 4.2.*    |
+| node        | nodejs  | 9006  | 6.*      |
 | mysql       | mysql56 | 9016  | 5.6.*    |
 |             | mysql57 | 9017  | 5.7.*    |
 | php (fpm)   | php55   | 9055  | 5.5.*    |
 |             | php56   | 9056  | 5.6.*    |
 |             | php70   | 9070  | 7.0.*    |
-
-\* coming soon
 
 ## Data persistance
 

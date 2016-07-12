@@ -8,9 +8,21 @@ services:
     volumes:
      - ~/PhpstormProjects:/usr/share/nginx/html
     links:
+     - node6
      - php55
      - php56
      - php70
+
+  node6:
+    build: ./node6
+    container_name: node6
+    ports:
+    - "9006:8888"
+    volumes:
+    - ~/PhpstormProjects:/var/www/html
+    links:
+    - mysql56
+    - mysql57
 
   php55:
     build: ./php55
