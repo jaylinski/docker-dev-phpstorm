@@ -42,8 +42,7 @@ After your containers are built, run `docker-compose up -d` and start coding!
 | node*       | nodejs  | 8090  | 4.2.*    |
 | mysql       | mysql56 | 9016  | 5.6.*    |
 |             | mysql57 | 9017  | 5.7.*    |
-| php (fpm)   | php54   | 9054  | 5.4.*    |
-|             | php55   | 9055  | 5.5.*    |
+| php (fpm)   | php55   | 9055  | 5.5.*    |
 |             | php56   | 9056  | 5.6.*    |
 |             | php70   | 9070  | 7.0.*    |
 
@@ -74,8 +73,8 @@ Please let me know if there is an easy solution for this. Current solutions are 
 #### Start
 `$ docker-compose up -d`
 
-#### Shut down
-`$ docker-compose kill`
+#### Stop
+`$ docker-compose stop`
 
 #### List containers
 `$ docker-compose ps`

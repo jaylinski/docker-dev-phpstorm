@@ -8,21 +8,9 @@ services:
     volumes:
      - ~/PhpstormProjects:/usr/share/nginx/html
     links:
-     - php54
      - php55
      - php56
      - php70
-
-  php54:
-    build: ./php54
-    container_name: php54
-    ports:
-     - "9054:9000"
-    volumes:
-     - ~/PhpstormProjects:/var/www/html
-    links:
-     - mysql56
-     - mysql57
 
   php55:
     build: ./php55
