@@ -44,7 +44,7 @@ After your containers are built, run `docker-compose up -d` and start coding!
 | Container   | Name    | Port  | Version  |
 | ----------- | ------- | ----- | -------- |
 | nginx       | nginx   | 8080  | 1.9.*    |
-| node        | nodejs  | 9006  | 6.*      |
+| node        | node6   | 9006  | 6.*      |
 | mysql       | mysql56 | 9016  | 5.6.*    |
 |             | mysql57 | 9017  | 5.7.*    |
 | php (fpm)   | php55   | 9055  | 5.5.*    |
