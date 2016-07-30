@@ -89,4 +89,4 @@ Please let me know if there is an easy solution for this. Current solutions are 
 > Do only execute if you know what you are doing!
 
 `$ docker rm $(docker ps -a -q)`   
-`$ docker rmi $(docker images -q)`
+`$ docker rmi -f $(docker images -q)`
