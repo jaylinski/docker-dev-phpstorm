@@ -68,8 +68,9 @@ Please let me know if there is an easy solution for this. Current solutions are 
 
 ## Help
 
-### [FAQ](https://github.com/jaylinski/docker-dev-phpstorm/wiki/FAQ)
-* How to setup Piwik with PHP 5.6 and MySQL 5.6
+### FAQ
+* [How to setup Piwik with PHP 5.6 and MySQL 5.6](https://github.com/jaylinski/docker-dev-phpstorm/wiki/FAQ#how-to-setup-piwik-with-php-56-and-mysql-56)
+* [How can I see error logs from PHP?](https://github.com/jaylinski/docker-dev-phpstorm/wiki/FAQ#how-can-i-see-error-logs-from-php)
 
 ### Useful commands
 
