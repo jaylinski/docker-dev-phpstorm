@@ -2,7 +2,6 @@ version: '2'
 services:
   nginx:
     build: ./nginx
-    container_name: nginx
     ports:
      - "8080:80"
     volumes:
@@ -14,7 +13,6 @@ services:
 
   node6:
     build: ./node6
-    container_name: node6
     ports:
     - "9006:8888"
     volumes:
@@ -25,7 +23,6 @@ services:
 
   php56:
     build: ./php56
-    container_name: php56
     ports:
      - "9056:9000"
     volumes:
@@ -36,7 +33,6 @@ services:
 
   php70:
     build: ./php70
-    container_name: php70
     ports:
      - "9070:9000"
     volumes:
@@ -47,7 +43,6 @@ services:
 
   mysql56:
     build: ./mysql56
-    container_name: mysql56
     environment:
      - MYSQL_ROOT_PASSWORD=mysql56secret
     ports:
@@ -57,7 +52,6 @@ services:
 
   mysql57:
     build: ./mysql57
-    container_name: mysql57
     environment:
      - MYSQL_ROOT_PASSWORD=mysql57secret
     ports:
