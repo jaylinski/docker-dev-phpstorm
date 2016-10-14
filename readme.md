@@ -47,8 +47,7 @@ After your containers are built, run `docker-compose up -d` and start coding!
 | node        | node6   | 9006  | 6.*      |
 | mysql       | mysql56 | 9016  | 5.6.*    |
 |             | mysql57 | 9017  | 5.7.*    |
-| php (fpm)   | php55   | 9055  | 5.5.*    |
-|             | php56   | 9056  | 5.6.*    |
+| php (fpm)   | php56   | 9056  | 5.6.*    |
 |             | php70   | 9070  | 7.0.*    |
 
 ## Data persistance

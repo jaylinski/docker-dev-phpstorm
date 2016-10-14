@@ -9,7 +9,6 @@ services:
      - ~/PhpstormProjects:/usr/share/nginx/html
     links:
      - node6
-     - php55
      - php56
      - php70
 
@@ -23,17 +22,6 @@ services:
     links:
     - mysql56
     - mysql57
-
-  php55:
-    build: ./php55
-    container_name: php55
-    ports:
-     - "9055:9000"
-    volumes:
-     - ~/PhpstormProjects:/var/www/html
-    links:
-     - mysql56
-     - mysql57
 
   php56:
     build: ./php56
