@@ -83,7 +83,7 @@ Please let me know if there is an easy solution for this. Current solutions are 
 `$ docker-compose ps`
 
 #### Open container bash
-`$ docker-compose run nginx /bin/bash`
+`$ docker-compose exec nginx /bin/bash`
 
 #### Remove all docker containers and images
 > Do only execute if you know what you are doing!
