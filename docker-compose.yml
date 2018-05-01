@@ -13,7 +13,7 @@ services:
      - php71
      - php72
 
-  node6:
+  node8:
     build: ./node8
     ports:
     - "9008:8888"
