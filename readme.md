@@ -1,4 +1,4 @@
-# PhpStorm development with [Docker](https://github.com/docker/docker)
+# PhpStorm development with [Docker](https://github.com/docker/docker-ce)
 
 Development environment for PhpStorm based on Docker, managed with [Compose](https://github.com/docker/compose).
 
@@ -13,14 +13,14 @@ See [Install Docker Compose](https://docs.docker.com/compose/install/) for more 
 
 ### Setup
 
-Clone this repository into `~/PhpstormProjects/.docker`.
+Clone this repository into `~/PhpstormProjects/docker-dev-phpstorm`.
 
 #### Configuration
 
 You may need to configure your project and volume paths in `docker-compose.yml`.
 
 The project default path is set to `~/PhpstormProjects`.
-The data default path is set to `~/PhpstormProjects/.docker/data`.
+The data default path is set to `~/PhpstormProjects/docker-dev-phpstorm/data`.
 
 ##### nginx
 
@@ -47,9 +47,9 @@ After your containers are built, run `docker-compose up -d` and start coding!
 | node        | node8   | 9008  | 8.*      |
 | mysql       | mysql57 | 9017  | 5.7.*    |
 | php (fpm)   | php56   | 9056  | 5.6.*    |
-|             | php70   | 9070  | 7.0.*    |
 |             | php71   | 9071  | 7.1.*    |
 |             | php72   | 9072  | 7.2.*    |
+|             | php73   | 9073  | 7.3.*    |
 
 ## Data persistance
 

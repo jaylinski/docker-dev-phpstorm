@@ -9,9 +9,9 @@ services:
     links:
      - node8
      - php56
-     - php70
      - php71
      - php72
+     - php73
 
   node8:
     build: ./node8
@@ -26,15 +26,6 @@ services:
     build: ./php56
     ports:
      - "9056:9000"
-    volumes:
-     - ~/PhpstormProjects:/var/www/html
-    links:
-     - mysql57
-
-  php70:
-    build: ./php70
-    ports:
-     - "9070:9000"
     volumes:
      - ~/PhpstormProjects:/var/www/html
     links:
@@ -58,6 +49,15 @@ services:
     links:
      - mysql57
 
+  php73:
+    build: ./php73
+    ports:
+      - "9073:9000"
+    volumes:
+      - ~/PhpstormProjects:/var/www/html
+    links:
+      - mysql57
+
   mysql57:
     build: ./mysql57
     environment:
@@ -65,4 +65,4 @@ services:
     ports:
      - "9017:3306"
     volumes:
-     - ~/PhpstormProjects/.docker/data/mysql57:/var/lib/mysql
+     - ~/PhpstormProjects/docker-dev-phpstorm/data/mysql57:/var/lib/mysql
