@@ -7,7 +7,7 @@ services:
     volumes:
      - ~/PhpstormProjects:/usr/share/nginx/html
     links:
-     - node8
+     - node
      - php72
      - php73
      - php74
