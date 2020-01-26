@@ -30,8 +30,8 @@ The file(s) will be copied into the nginx `conf.d` directory.
 
 ##### node
 
-In order for nginx to run, a default `server.js` in the `node8` directory is executed on startup.   
-You can change the node entry point in the `node8/Dockerfile`.
+In order for nginx to run, a default `server.js` in the `node` directory is executed on startup.   
+You can change the node entry point in the `node/Dockerfile`.
 
 #### Build
 
@@ -44,12 +44,11 @@ After your containers are built, run `docker-compose up -d` and start coding!
 | Container   | Name    | Port  | Version  |
 | ----------- | ------- | ----- | -------- |
 | nginx       | nginx   | 8080  | 1.9.*    |
-| node        | node8   | 9008  | 8.*      |
+| node        | node    | 9012  | 12.*     |
 | mysql       | mysql57 | 9017  | 5.7.*    |
-| php (fpm)   | php56   | 9056  | 5.6.*    |
-|             | php71   | 9071  | 7.1.*    |
-|             | php72   | 9072  | 7.2.*    |
+| php (fpm)   | php72   | 9072  | 7.2.*    |
 |             | php73   | 9073  | 7.3.*    |
+|             | php74   | 9074  | 7.4.*    |
 
 ## Data persistance
 

@@ -8,37 +8,18 @@ services:
      - ~/PhpstormProjects:/usr/share/nginx/html
     links:
      - node8
-     - php56
-     - php71
      - php72
      - php73
+     - php74
 
-  node8:
-    build: ./node8
+  node:
+    build: ./node
     ports:
-    - "9008:8888"
+    - "9012:8888"
     volumes:
     - ~/PhpstormProjects:/var/www/html
     links:
     - mysql57
-
-  php56:
-    build: ./php56
-    ports:
-     - "9056:9000"
-    volumes:
-     - ~/PhpstormProjects:/var/www/html
-    links:
-     - mysql57
-
-  php71:
-    build: ./php71
-    ports:
-     - "9071:9000"
-    volumes:
-     - ~/PhpstormProjects:/var/www/html
-    links:
-     - mysql57
 
   php72:
     build: ./php72
@@ -53,6 +34,15 @@ services:
     build: ./php73
     ports:
       - "9073:9000"
+    volumes:
+      - ~/PhpstormProjects:/var/www/html
+    links:
+      - mysql57
+
+  php74:
+    build: ./php74
+    ports:
+      - "9074:9000"
     volumes:
       - ~/PhpstormProjects:/var/www/html
     links:
