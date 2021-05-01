@@ -43,12 +43,12 @@ After your containers are built, run `docker-compose up -d` and start coding!
 
 | Container   | Name    | Port  | Version  |
 | ----------- | ------- | ----- | -------- |
-| nginx       | nginx   | 8080  | 1.9.*    |
-| node        | node    | 9012  | 12.*     |
+| nginx       | nginx   | 8080  | 1.11.*   |
+| node        | node    | 9014  | 14.*     |
 | mysql       | mysql57 | 9017  | 5.7.*    |
-| php (fpm)   | php72   | 9072  | 7.2.*    |
-|             | php73   | 9073  | 7.3.*    |
+| php (fpm)   | php73   | 9073  | 7.3.*    |
 |             | php74   | 9074  | 7.4.*    |
+|             | php80   | 9080  | 8.0.*    |
 
 ## Data persistance
 
