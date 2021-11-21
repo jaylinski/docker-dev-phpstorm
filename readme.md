@@ -44,15 +44,15 @@ After your containers are built, run `docker-compose up -d` and start coding!
 | Container   | Name    | Port  | Version  |
 | ----------- | ------- | ----- | -------- |
 | nginx       | nginx   | 8080  | 1.11.*   |
-| node        | node    | 9014  | 14.*     |
-| mysql       | mysql57 | 9017  | 5.7.*    |
-| php (fpm)   | php73   | 9073  | 7.3.*    |
-|             | php74   | 9074  | 7.4.*    |
+| node        | node    | 9016  | 16.*     |
+| mariadb     | mariadb | 9010  | 10.7.*   |
+| php (fpm)   | php74   | 9074  | 7.4.*    |
 |             | php80   | 9080  | 8.0.*    |
+|             | php81   | 9081  | 8.1.*    |
 
 ## Data persistance
 
-MySQL data is stored in the `data` directory.
+MariaDB data is stored in the `data` directory.
 
 ## File and folder permissions
 

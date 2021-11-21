@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:16-slim
 
 COPY server.js /var/www/node/
 
