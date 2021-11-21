@@ -1,3 +1,3 @@
 # Persistent data storage
 
-Currently used for mysql container.
+Currently used for MariaDB container.

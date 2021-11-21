@@ -3,32 +3,23 @@ services:
   nginx:
     build: ./nginx
     ports:
-     - "8080:80"
+      - "8080:80"
     volumes:
-     - ~/PhpstormProjects:/usr/share/nginx/html
+      - ~/PhpstormProjects:/usr/share/nginx/html
     links:
-     - node
-     - php73
-     - php74
-     - php80
+      - node
+      - php74
+      - php80
+      - php81
 
   node:
     build: ./node
     ports:
-    - "9014:8888"
+      - "9014:8888"
     volumes:
-    - ~/PhpstormProjects:/var/www/html
+      - ~/PhpstormProjects:/var/www/html
     links:
-    - mysql57
-
-  php73:
-    build: ./php73
-    ports:
-     - "9073:9000"
-    volumes:
-     - ~/PhpstormProjects:/var/www/html
-    links:
-     - mysql57
+      - mariadb
 
   php74:
     build: ./php74
@@ -37,7 +28,7 @@ services:
     volumes:
       - ~/PhpstormProjects:/var/www/html
     links:
-      - mysql57
+      - mariadb
 
   php80:
     build: ./php80
@@ -46,13 +37,22 @@ services:
     volumes:
       - ~/PhpstormProjects:/var/www/html
     links:
-      - mysql57
+      - mariadb
 
-  mysql57:
-    build: ./mysql57
-    environment:
-     - MYSQL_ROOT_PASSWORD=mysql57secret
+  php81:
+    build: ./php81
     ports:
-     - "9017:3306"
+      - "9081:9000"
     volumes:
-     - ~/PhpstormProjects/docker-dev-phpstorm/data/mysql57:/var/lib/mysql
+      - ~/PhpstormProjects:/var/www/html
+    links:
+      - mariadb
+
+  mariadb:
+    build: mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=mariaDBsecret
+    ports:
+      - "9010:3306"
+    volumes:
+      - ~/PhpstormProjects/docker-dev-phpstorm/data/mariadb:/var/lib/mysql
