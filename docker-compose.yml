@@ -8,32 +8,14 @@ services:
       - ~/PhpstormProjects:/usr/share/nginx/html
     links:
       - node
-      - php74
-      - php80
       - php81
+      - php82
+      - php83
 
   node:
     build: ./node
     ports:
-      - "9014:8888"
-    volumes:
-      - ~/PhpstormProjects:/var/www/html
-    links:
-      - mariadb
-
-  php74:
-    build: ./php74
-    ports:
-      - "9074:9000"
-    volumes:
-      - ~/PhpstormProjects:/var/www/html
-    links:
-      - mariadb
-
-  php80:
-    build: ./php80
-    ports:
-      - "9080:9000"
+      - "9020:8888"
     volumes:
       - ~/PhpstormProjects:/var/www/html
     links:
@@ -43,6 +25,24 @@ services:
     build: ./php81
     ports:
       - "9081:9000"
+    volumes:
+      - ~/PhpstormProjects:/var/www/html
+    links:
+      - mariadb
+
+  php82:
+    build: ./php82
+    ports:
+      - "9082:9000"
+    volumes:
+      - ~/PhpstormProjects:/var/www/html
+    links:
+      - mariadb
+
+  php83:
+    build: ./php83
+    ports:
+      - "9083:9000"
     volumes:
       - ~/PhpstormProjects:/var/www/html
     links:

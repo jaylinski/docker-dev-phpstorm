@@ -41,14 +41,14 @@ After your containers are built, run `docker-compose up -d` and start coding!
 
 ## Containers
 
-| Container   | Name    | Port  | Version  |
-| ----------- | ------- | ----- | -------- |
-| nginx       | nginx   | 8080  | 1.11.*   |
-| node        | node    | 9016  | 16.*     |
-| mariadb     | mariadb | 9010  | 10.7.*   |
-| php (fpm)   | php74   | 9074  | 7.4.*    |
-|             | php80   | 9080  | 8.0.*    |
-|             | php81   | 9081  | 8.1.*    |
+| Container   | Name    | Port | Version |
+| ----------- |---------|------|---------|
+| nginx       | nginx   | 8080 | 1.*     |
+| node        | node    | 9020 | 20.*    |
+| mariadb     | mariadb | 9010 | 10.11.* |
+| php (fpm)   | php81   | 9081 | 8.1.*   |
+|             | php82   | 9082 | 8.2.*   |
+|             | php83   | 9083 | 8.3.*   |
 
 ## Data persistance
 
